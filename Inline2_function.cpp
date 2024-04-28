@@ -1,23 +1,28 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class operation{
+class operation
+{
     int a, b, addn, subs;
-    public:
+
+public:
     void num();
     void add();
     void sub();
 };
-inline void operation :: num(){
-    cout<<"Enter the numbers: "<<endl;
-    cin>>a>>b;
+inline void operation ::num()
+{
+    cout << "Enter the numbers: " << endl;
+    cin >> a >> b;
 }
-inline void operation :: add(){
-    addn=a+b;
-    cout<<"The addition of the numbers is: "<<addn<<endl;
+inline void operation ::add()
+{
+    addn = a + b;
+    cout << "The addition of the numbers is: " << addn << endl;
 }
-inline void operation :: sub(){
-    subs=a-b;
-    cout<<"The substraction of the numbers is: "<<subs<<endl;
+inline void operation ::sub()
+{
+    subs = a - b;
+    cout << "The substraction of the numbers is: " << subs << endl;
 }
 int main()
 {
@@ -25,5 +30,5 @@ int main()
     rash.num();
     rash.add();
     rash.sub();
-   return 0;
+    return 0;
 }
