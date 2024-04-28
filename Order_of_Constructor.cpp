@@ -17,7 +17,7 @@ public:
         cout << "Inside second base class" << endl;
     }
 };
-class Child : public Parent2, public Parent1        //CALLING THE SECOND BASE CLASS FIRST
+class Child : public Parent2, public Parent1 // CALLING THE SECOND BASE CLASS FIRST
 {
 public:
     Child()

@@ -52,12 +52,12 @@ public:
 };
 int main()
 {
-    PatientDetails Parry;
-    Parry.setDocName("Parry");
-    Parry.getDocName();
-    Parry.setPatientName("Rash");
-    Parry.getPatName();
-    Parry.setPatientDetails("Stomach Ache", 2);
-    Parry.displayDetails();
+    PatientDetails Rash;
+    Rash.setDocName("Parry");
+    Rash.getDocName();
+    Rash.setPatientName("Rash");
+    Rash.getPatName();
+    Rash.setPatientDetails("Stomach Ache", 2);
+    Rash.displayDetails();
     return 0;
 }
