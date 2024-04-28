@@ -1,1 +1,1 @@
-This repository consists of some basic concepts of Object Oriented Programming that I have learnt from Youtube channel- CodeWithHarry and is purely based on his notes and some practices done by me
+This repository consists of some basic concepts of Object Oriented Programming that I have learnt several from Youtube channels/ geeksforgeeks, various other websites and is purely based on notes and some practices.
