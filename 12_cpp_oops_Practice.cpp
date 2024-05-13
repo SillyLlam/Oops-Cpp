@@ -17,11 +17,12 @@ public:
         a = x;
         b = y;
     }
-    Complex(int x)
-    {
-        a = x;
-        b = 0;
-    }
+    // Complex(int x)
+    // {
+    //     a = x;
+    //     b = 0;
+    // }
+    
     void printNumber()
     {
         cout << "Your number is: " << a << " + " << b << "i"
@@ -36,7 +37,7 @@ int main()
     Complex a2(3, 7);
     a2.printNumber();
 
-    // Complex a3;
-    // a3.printNumber();
+    Complex a3(4,6);
+    a3.printNumber();
     return 0;
 }

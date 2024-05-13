@@ -26,16 +26,16 @@ public:
 };
 int main()
 {
-    Number x, y, z(36), z2;
+    Number x, y, z(36); //z2;
     x.display();
     y.display();
     z.display();
     Number z1(x); // Copy Constructor invoked
     // z1 should exactly resemble as z or x or y
     z1.display();
-    z2 = z; // Copy Constructor not called because the object z is already made, and z2 is just assigned (=) to z
-    z2.display();
-    Number z3 = x; // Copy Constructor will be invoked because the obj (z3) is made on a different line (different section)
+    // z2 = z; // Copy Constructor not called because the object z is already made, and z2 is just assigned (=) to z
+    // z2.display();
+    Number z3 = x; // Copy Constructor will be invoked because the obj (z3) is made on a different line (different section of constructor calling)
     z3.display();
     return 0;
 }

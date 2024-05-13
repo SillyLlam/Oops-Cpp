@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include <vector>
 using namespace std;
 int main()
@@ -24,6 +25,13 @@ int main()
     // inserts 5 at beginning
     v.insert(v.begin(), 5);
     cout << "\nThe first element is: " << v[0];
+    cout << endl;
+
+    sort(v.begin(), v.end());
+    cout << "Vector after sorting: ";
+    for (auto in = v.begin(); in != v.end(); in++)
+        cout << *in << " ";
+    cout << endl;
 
     // printing the vector
     cout << "\nThe vector after inserting 5 at the beginning: ";
@@ -48,13 +56,13 @@ int main()
     int n = v.size();
     cout << "\nThe last element is: " << v[n - 1];
 
-    v.emplace(v.end(),30);
-    int r= v.size();
-    cout<<"\nThe last element is: "<<v[r-1];
-    
-    cout<<"\nThe vector becomes: ";
-    for(auto ir=v.begin(); ir!=v.end(); ir++)
-    cout<<*ir<<" ";
+    v.emplace(v.end(), 30);
+    int r = v.size();
+    cout << "\nThe last element is: " << v[r - 1];
+
+    cout << "\nThe vector becomes: ";
+    for (auto ir = v.begin(); ir != v.end(); ir++)
+        cout << *ir << " ";
 
     // erases the vector
     cout << "\nVector size after clear(): " << v.size();
@@ -85,5 +93,6 @@ int main()
     cout << "\nVector 2: ";
     for (auto it = v2.begin(); it != v2.end(); it++)
         cout << *it << " ";
+
     return 0;
 }
